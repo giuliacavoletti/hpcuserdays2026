@@ -35,7 +35,7 @@ from earth2studio.lexicon import GFSLexicon
 # ---------------------------------------------------------------------------
 # Global config
 # ---------------------------------------------------------------------------
-CACHE_PATH = os.environ.get("EARTH2STUDIO_CACHE", "/e/project1/training2605/earth2_cache")
+CACHE_PATH = os.environ.get("EARTH2STUDIO_CACHE", "/e/project1/e-ben-2026b09-120/earth2_cache")
 os.environ["EARTH2STUDIO_CACHE"] = CACHE_PATH
 
 GFS_LAT = np.linspace(90, -90, 721)

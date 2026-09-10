@@ -59,6 +59,12 @@ GRIB_MAP = {
     # Jan 15 2024
     np.datetime64("2024-01-14T18:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20240114.t18z.pgrb2.0p25.f000",
     np.datetime64("2024-01-15T00:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20240115.t00z.pgrb2.0p25.f000",
+    # Aug 1 2026
+    np.datetime64("2026-07-31T18:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20260731.t18z.pgrb2.0p25.f000",
+    np.datetime64("2026-08-01T00:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20260801.t00z.pgrb2.0p25.f000",
+    # Aug 15 2026
+    np.datetime64("2026-08-14T18:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20260814.t18z.pgrb2.0p25.f000",
+    np.datetime64("2026-08-15T00:00", "ns"): f"{CACHE_PATH}/gfs/gfs.20260815.t00z.pgrb2.0p25.f000",
 }
 data = LocalGFSSource(GRIB_MAP)
 timings["data_load"] = time.time() - start_time
@@ -79,7 +85,9 @@ io = ZarrBackend(
 # ---------------------------------------------------------------------------
 times = np.array([
     "2024-01-01T00:00:00",
-    "2024-01-15T00:00:00",  #  uncomment and download GRIB files to use 2 GPUs
+    "2024-01-15T00:00:00",
+    "2026-08-01T00:00:00",
+    "2026-08-15T00:00:00",
 ])
 
 time_shard = np.array_split(times, dist.world_size)[dist.rank]
