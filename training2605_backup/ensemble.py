@@ -38,6 +38,10 @@ os.makedirs("outputs", exist_ok=True)
 package = OfflinePackage(f"{CACHE_PATH}/fcn")
 model = FCN.load_model(package).to(device)
 
+seed = 42 + rank
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
+
 sg = SphericalGaussian(noise_amplitude=0.15)
 
 GRIB_MAP = {
