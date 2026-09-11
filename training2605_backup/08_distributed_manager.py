@@ -9,7 +9,6 @@ import logging
 warnings.filterwarnings("ignore")
 logging.disable(logging.WARNING)
 
-
 import numpy as np
 import torch
 from loguru import logger
@@ -41,7 +40,6 @@ package = OfflinePackage(f"{CACHE_PATH}/dlwp")
 if dist.rank == 0:
     model = DLWP.load_model(package)
 
-#torch.distributed.barrier()
 if dist.rank != 0:
     model = DLWP.load_model(package)
 timings["model_load"] = time.time() - start_time
@@ -49,7 +47,6 @@ timings["model_load"] = time.time() - start_time
 
 # ---------------------------------------------------------------------------
 # Data source — local GRIB files, no internet needed
-# Add more dates here if you download more GRIB files
 # ---------------------------------------------------------------------------
 start_time = time.time()
 GRIB_MAP = {
@@ -80,8 +77,7 @@ io = ZarrBackend(
 )
 
 # ---------------------------------------------------------------------------
-# Times — add one date per GPU to keep all GPUs busy
-# With only 1 date and 2 GPUs, one GPU will sit idle (fine for testing)
+# Split the time range among the available GPUs
 # ---------------------------------------------------------------------------
 times = np.array([
     "2024-01-01T00:00:00",
@@ -116,26 +112,26 @@ timings["inference"] = time.time() - start_time
 # Timing summary
 # ---------------------------------------------------------------------------
 if dist.rank == 0:
- total = sum(timings.values())
- print(f"\n{'='*45}")
- print(f"  Timing Summary — Rank {dist.rank} / {dist.world_size} (device: {dist.device})")
- print(f"{'='*45}")
- for key, val in timings.items():
-    print(f"  {key:<20} {val:>8.2f}s  ({100*val/total:.1f}%)")
- print(f"  {'TOTAL':<20} {total:>8.2f}s")
- print(f"{'='*45}\n")
+    total = sum(timings.values())
+    print(f"\n{'='*45}")
+    print(f"  Timing Summary — Rank {dist.rank} / {dist.world_size} (device: {dist.device})")
+    print(f"{'='*45}")
+    for key, val in timings.items():
+        print(f"  {key:<20} {val:>8.2f}s  ({100*val/total:.1f}%)")
+    print(f"  {'TOTAL':<20} {total:>8.2f}s")
+    print(f"{'='*45}\n")
 
 torch.distributed.barrier()
 
 if dist.rank != 0:
- total = sum(timings.values())
- print(f"\n{'='*45}")
- print(f"  Timing Summary — Rank {dist.rank} / {dist.world_size} (device: {dist.device})")
- print(f"{'='*45}")
- for key, val in timings.items():
-    print(f"  {key:<20} {val:>8.2f}s  ({100*val/total:.1f}%)")
- print(f"  {'TOTAL':<20} {total:>8.2f}s")
- print(f"{'='*45}\n")
+    total = sum(timings.values())
+    print(f"\n{'='*45}")
+    print(f"  Timing Summary — Rank {dist.rank} / {dist.world_size} (device: {dist.device})")
+    print(f"{'='*45}")
+    for key, val in timings.items():
+        print(f"  {key:<20} {val:>8.2f}s  ({100*val/total:.1f}%)")
+    print(f"  {'TOTAL':<20} {total:>8.2f}s")
+    print(f"{'='*45}\n")
 
 
 # ---------------------------------------------------------------------------
