@@ -1,0 +1,161 @@
+--- Warming up system caches ---
+=== STARTING WEAK SCALING ===
+--- Test on 1 GPU (Weak) ---
+[W914 18:46:01.626481379 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44155 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:01.627828744 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44155 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:01.629056367 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44155 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:01.728737986 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r6-nod65.jupiter.internal]:37433 (errno: 97 - Address family not supported by protocol).
+[32m2026-09-14 18:46:21.466[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 0 of 1 with device cuda:0[0m
+[32m2026-09-14 18:46:22.253[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:46:22.253[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:0[0m
+[32m2026-09-14 18:46:44.689[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:46:44.690[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.12it/s][A
+Running inference:  43%|████▎     | 9/21 [00:00<00:00, 34.69it/s][A
+Running inference:  76%|███████▌  | 16/21 [00:00<00:00, 44.58it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 38.83it/s]
+[32m2026-09-14 18:46:45.231[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+Logged weak scaling result: 1 GPUs, 22.9790s
+--- Test on 2 GPU (Weak) ---
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W914 18:46:51.966345539 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41435 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:51.967593482 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41435 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:51.968817137 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41435 (errno: 97 - Address family not supported by protocol).
+[W914 18:46:51.300380790 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-006-30.jupiter.internal]:37325 (errno: 97 - Address family not supported by protocol).
+[32m2026-09-14 18:47:09.095[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 1 of 2 with device cuda:1[0m
+[32m2026-09-14 18:47:09.095[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 0 of 2 with device cuda:0[0m
+[32m2026-09-14 18:47:09.945[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:47:09.945[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:0[0m
+[32m2026-09-14 18:47:10.149[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:47:10.149[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:1[0m
+[32m2026-09-14 18:47:33.169[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:47:33.170[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:02,  9.36it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 35.63it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 49.57it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 44.60it/s]
+[32m2026-09-14 18:47:33.642[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+[32m2026-09-14 18:47:35.302[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:47:35.302[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.91it/s][A
+Running inference:  43%|████▎     | 9/21 [00:00<00:00, 32.43it/s][A
+Running inference:  76%|███████▌  | 16/21 [00:00<00:00, 45.41it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 40.64it/s]
+[32m2026-09-14 18:47:35.820[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+Logged weak scaling result: 2 GPUs, 25.6711s
+--- Test on 3 GPU (Weak) ---
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W914 18:47:42.526251914 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33057 (errno: 97 - Address family not supported by protocol).
+[W914 18:47:42.527586926 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33057 (errno: 97 - Address family not supported by protocol).
+[W914 18:47:42.528810902 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33057 (errno: 97 - Address family not supported by protocol).
+[W914 18:47:43.869067720 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-006-30.jupiter.internal]:43191 (errno: 97 - Address family not supported by protocol).
+[32m2026-09-14 18:48:02.119[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 2 of 3 with device cuda:2[0m
+[32m2026-09-14 18:48:02.119[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 1 of 3 with device cuda:1[0m
+[32m2026-09-14 18:48:02.119[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 0 of 3 with device cuda:0[0m
+[32m2026-09-14 18:48:02.851[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:02.851[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:0[0m
+[32m2026-09-14 18:48:02.858[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:02.859[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:1[0m
+[32m2026-09-14 18:48:03.177[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:03.177[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:2[0m
+[32m2026-09-14 18:48:24.627[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:48:24.628[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.34it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 38.26it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 52.51it/s][A[32m2026-09-14 18:48:25.067[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:48:25.068[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 47.57it/s]
+[32m2026-09-14 18:48:25.070[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.91it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 39.33it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 53.05it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 48.32it/s]
+[32m2026-09-14 18:48:25.503[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+[32m2026-09-14 18:48:26.131[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:48:26.132[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 11.23it/s][A
+Running inference:  38%|███▊      | 8/21 [00:00<00:00, 29.22it/s][A
+Running inference:  76%|███████▌  | 16/21 [00:00<00:00, 46.43it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 44.50it/s]
+[32m2026-09-14 18:48:26.604[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+Logged weak scaling result: 3 GPUs, 23.4272s
+--- Test on 4 GPU (Weak) ---
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W914 18:48:33.716438355 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37415 (errno: 97 - Address family not supported by protocol).
+[W914 18:48:33.717679450 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37415 (errno: 97 - Address family not supported by protocol).
+[W914 18:48:33.718872577 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37415 (errno: 97 - Address family not supported by protocol).
+[W914 18:48:33.808484418 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-006-30-interconnect-1.jupiter.internal]:36657 (errno: 97 - Address family not supported by protocol).
+[32m2026-09-14 18:48:53.703[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 2 of 4 with device cuda:2[0m
+[32m2026-09-14 18:48:53.703[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 3 of 4 with device cuda:3[0m
+[32m2026-09-14 18:48:53.703[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 0 of 4 with device cuda:0[0m
+[32m2026-09-14 18:48:53.704[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1mInference runner 1 of 4 with device cuda:1[0m
+[32m2026-09-14 18:48:54.449[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:54.449[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:2[0m
+[32m2026-09-14 18:48:54.471[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:54.471[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:0[0m
+[32m2026-09-14 18:48:54.476[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:54.476[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:1[0m
+[32m2026-09-14 18:48:54.743[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m85[0m - [1mRunning simple workflow![0m
+[32m2026-09-14 18:48:54.743[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m92[0m - [1mInference device: cuda:3[0m
+[32m2026-09-14 18:49:19.430[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:49:19.431[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.60it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 40.17it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 54.92it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 49.59it/s]
+[32m2026-09-14 18:49:19.855[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+[32m2026-09-14 18:49:20.012[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:49:20.013[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:01, 10.85it/s][A[32m2026-09-14 18:49:20.227[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:49:20.228[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 38.55it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 43.24it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:02,  7.96it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 42.05it/s]
+[32m2026-09-14 18:49:20.513[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 32.76it/s][A
+Running inference:  86%|████████▌ | 18/21 [00:00<00:00, 47.13it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 39.22it/s]
+[32m2026-09-14 18:49:20.764[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+[32m2026-09-14 18:49:23.983[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m154[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-14 18:49:23.983[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m162[0m - [1mInference starting![0m
+
+Running inference:   0%|          | 0/21 [00:00<?, ?it/s][A
+Running inference:  10%|▉         | 2/21 [00:00<00:02,  8.40it/s][A
+Running inference:  48%|████▊     | 10/21 [00:00<00:00, 33.31it/s][A
+Running inference:  71%|███████▏  | 15/21 [00:00<00:00, 38.30it/s][ARunning inference: 100%|██████████| 21/21 [00:00<00:00, 38.51it/s]
+[32m2026-09-14 18:49:24.529[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mdeterministic[0m:[36m189[0m - [32m[1m
+Inference complete[0m
+Logged weak scaling result: 4 GPUs, 29.7864s
+Benchmark completed. Generating plot...
+Saved outputs/weak_scaling_inference.png
+Done! Check the 'outputs' directory for the weak scaling plot.

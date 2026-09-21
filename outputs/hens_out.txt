@@ -1,0 +1,442 @@
+=== PERFORMING WARMUP PASS ===
+=== STARTING STRONG SCALING (24 total members) ===
+--- Test on 1 GPU (Strong) ---
+[W916 12:09:51.617433893 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33071 (errno: 97 - Address family not supported by protocol).
+[W916 12:09:51.619938876 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33071 (errno: 97 - Address family not supported by protocol).
+[W916 12:09:51.621318084 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33071 (errno: 97 - Address family not supported by protocol).
+[W916 12:09:51.800572370 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:42367 (errno: 97 - Address family not supported by protocol).
+[W916 12:10:02.145655356 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:42367 (errno: 97 - Address family not supported by protocol).
+[HENS STRONG SCALING] GPUs: 1 | Total: 24 | Per-GPU: 24
+[rank0]:[W916 12:10:29.674284091 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 12:10:30.734[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:10:30.735[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 12:12:18.290[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:12:18.312[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 24 Member Ensemble Inference with             3 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:02<00:11,  1.25s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:04<00:14,  1.75s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:07<00:14,  2.00s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:09<00:12,  2.15s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:12<00:11,  2.24s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:14<00:09,  2.30s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:17<00:07,  2.33s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:19<00:04,  2.36s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:21<00:02,  2.39s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:24<00:00,  2.40s/it][A
+                                                                          [A
+
+Total Ensemble Batches:  33%|███▎      | 1/3 [07:46<15:32, 466.38s/it][A[A
+Running batch 8 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 8 inference:  18%|█▊        | 2/11 [00:02<00:11,  1.24s/it][A
+Running batch 8 inference:  27%|██▋       | 3/11 [00:04<00:13,  1.75s/it][A
+Running batch 8 inference:  36%|███▋      | 4/11 [00:07<00:13,  2.00s/it][A
+Running batch 8 inference:  45%|████▌     | 5/11 [00:09<00:12,  2.15s/it][A
+Running batch 8 inference:  55%|█████▍    | 6/11 [00:12<00:11,  2.24s/it][A
+Running batch 8 inference:  64%|██████▎   | 7/11 [00:14<00:09,  2.30s/it][A
+Running batch 8 inference:  73%|███████▎  | 8/11 [00:17<00:07,  2.34s/it][A
+Running batch 8 inference:  82%|████████▏ | 9/11 [00:19<00:04,  2.37s/it][A
+Running batch 8 inference:  91%|█████████ | 10/11 [00:21<00:02,  2.39s/it][A
+Running batch 8 inference: 100%|██████████| 11/11 [00:24<00:00,  2.39s/it][A
+                                                                          [A
+
+Total Ensemble Batches:  67%|██████▋   | 2/3 [16:16<08:12, 492.35s/it][A[A
+Running batch 16 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 16 inference:  18%|█▊        | 2/11 [00:02<00:11,  1.25s/it][A
+Running batch 16 inference:  27%|██▋       | 3/11 [00:04<00:13,  1.74s/it][A
+Running batch 16 inference:  36%|███▋      | 4/11 [00:07<00:13,  1.99s/it][A
+Running batch 16 inference:  45%|████▌     | 5/11 [00:09<00:12,  2.14s/it][A
+Running batch 16 inference:  55%|█████▍    | 6/11 [00:12<00:11,  2.24s/it][A
+Running batch 16 inference:  64%|██████▎   | 7/11 [00:14<00:09,  2.30s/it][A
+Running batch 16 inference:  73%|███████▎  | 8/11 [00:17<00:07,  2.35s/it][A
+Running batch 16 inference:  82%|████████▏ | 9/11 [00:19<00:04,  2.37s/it][A
+Running batch 16 inference:  91%|█████████ | 10/11 [00:21<00:02,  2.39s/it][A
+Running batch 16 inference: 100%|██████████| 11/11 [00:24<00:00,  2.40s/it][A
+                                                                           [A
+
+Total Ensemble Batches: 100%|██████████| 3/3 [25:02<00:00, 507.32s/it][A[ATotal Ensemble Batches: 100%|██████████| 3/3 [25:02<00:00, 500.68s/it]
+[32m2026-09-16 12:37:20.362[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+--- Test on 2 GPU (Strong) ---
+[W916 12:37:29.047255522 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:39701 (errno: 97 - Address family not supported by protocol).
+[W916 12:37:29.048484973 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:39701 (errno: 97 - Address family not supported by protocol).
+[W916 12:37:29.049583802 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:39701 (errno: 97 - Address family not supported by protocol).
+[W916 12:37:29.232045968 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:35745 (errno: 97 - Address family not supported by protocol).
+[W916 12:37:44.304500896 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:35745 (errno: 97 - Address family not supported by protocol).
+[W916 12:37:44.382762893 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:35745 (errno: 97 - Address family not supported by protocol).
+[HENS STRONG SCALING] GPUs: 2 | Total: 24 | Per-GPU: 12
+[rank0]:[W916 12:38:17.543092464 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 12:38:19.380[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:38:19.380[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:38:19.382[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 12:38:19.382[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:1[0m
+[32m2026-09-16 12:40:05.889[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:40:05.917[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 12 Member Ensemble Inference with             2 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/2 [00:00<?, ?it/s][A[A[32m2026-09-16 12:40:06.660[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:40:06.685[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 12 Member Ensemble Inference with             2 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/2 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:   9%|▉         | 1/11 [00:00<00:01,  9.73it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:02<00:13,  1.53s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:05<00:15,  1.94s/it][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:   9%|▉         | 1/11 [00:00<00:01,  7.27it/s][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:07<00:14,  2.14s/it][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:02<00:14,  1.61s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:09<00:13,  2.25s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:05<00:16,  2.02s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:12<00:11,  2.31s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:07<00:15,  2.23s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:14<00:09,  2.35s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:10<00:14,  2.34s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:17<00:07,  2.38s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:12<00:12,  2.40s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:19<00:04,  2.44s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:22<00:02,  2.44s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:15<00:09,  2.44s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:24<00:00,  2.44s/it][A
+                                                                          [A
+
+Total Ensemble Batches:  50%|█████     | 1/2 [07:42<07:42, 462.33s/it][A[A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:17<00:07,  2.48s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:20<00:04,  2.48s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:22<00:02,  2.48s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:25<00:00,  2.49s/it][A
+                                                                          [A
+
+Total Ensemble Batches:  50%|█████     | 1/2 [07:49<07:49, 469.16s/it][A[A
+Running batch 8 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 8 inference:  18%|█▊        | 2/11 [00:01<00:05,  1.59it/s][A
+Running batch 8 inference:  27%|██▋       | 3/11 [00:02<00:07,  1.14it/s][A
+Running batch 8 inference:  36%|███▋      | 4/11 [00:03<00:07,  1.00s/it][A
+Running batch 8 inference:  45%|████▌     | 5/11 [00:04<00:06,  1.07s/it][A
+Running batch 8 inference:  55%|█████▍    | 6/11 [00:06<00:05,  1.12s/it][A
+Running batch 8 inference:  64%|██████▎   | 7/11 [00:07<00:04,  1.15s/it][A
+Running batch 8 inference:  73%|███████▎  | 8/11 [00:08<00:03,  1.17s/it][A
+Running batch 8 inference:  82%|████████▏ | 9/11 [00:09<00:02,  1.19s/it][A
+Running batch 8 inference:  91%|█████████ | 10/11 [00:10<00:01,  1.19s/it][A
+Running batch 8 inference: 100%|██████████| 11/11 [00:12<00:00,  1.20s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 2/2 [15:15<00:00, 456.89s/it][A[ATotal Ensemble Batches: 100%|██████████| 2/2 [15:15<00:00, 457.71s/it]
+[32m2026-09-16 12:55:21.333[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 8 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 8 inference:  18%|█▊        | 2/11 [00:01<00:05,  1.56it/s][A
+Running batch 8 inference:  27%|██▋       | 3/11 [00:02<00:07,  1.11it/s][A
+Running batch 8 inference:  36%|███▋      | 4/11 [00:03<00:07,  1.03s/it][A
+Running batch 8 inference:  45%|████▌     | 5/11 [00:05<00:06,  1.11s/it][A
+Running batch 8 inference:  55%|█████▍    | 6/11 [00:06<00:05,  1.15s/it][A
+Running batch 8 inference:  64%|██████▎   | 7/11 [00:07<00:04,  1.19s/it][A
+Running batch 8 inference:  73%|███████▎  | 8/11 [00:08<00:03,  1.21s/it][A
+Running batch 8 inference:  82%|████████▏ | 9/11 [00:10<00:02,  1.22s/it][A
+Running batch 8 inference:  91%|█████████ | 10/11 [00:11<00:01,  1.23s/it][A
+Running batch 8 inference: 100%|██████████| 11/11 [00:12<00:00,  1.24s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 2/2 [15:53<00:00, 477.81s/it][A[ATotal Ensemble Batches: 100%|██████████| 2/2 [15:53<00:00, 476.51s/it]
+[32m2026-09-16 12:55:59.712[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+--- Test on 4 GPU (Strong) ---
+[W916 12:56:09.557530822 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41147 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:09.558827152 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41147 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:09.560075642 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:41147 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:09.835522555 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:35207 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:24.706933029 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:35207 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:24.744451227 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:35207 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:24.785110268 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:35207 (errno: 97 - Address family not supported by protocol).
+[W916 12:56:24.888532126 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:35207 (errno: 97 - Address family not supported by protocol).
+[HENS STRONG SCALING] GPUs: 4 | Total: 24 | Per-GPU: 6
+[rank0]:[W916 12:57:01.634877084 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 12:57:05.663[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:57:05.663[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:57:05.664[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:2[0m
+[32m2026-09-16 12:57:05.664[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:1[0m
+[32m2026-09-16 12:57:05.663[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:57:05.663[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 12:57:05.665[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:3[0m
+[32m2026-09-16 12:57:05.665[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 12:58:56.331[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:58:56.358[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 12:58:56.418[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:58:56.447[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 12:58:59.299[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:58:59.328[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 12:59:04.580[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 12:59:04.605[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.04it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.04it/s][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:11,  1.40s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.32s/it][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.03it/s][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.57s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.51s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.35s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:10,  1.67s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.64s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.54s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.74s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.70s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.67s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.80s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:06,  1.75s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.74s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.82s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:12<00:05,  1.77s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.79s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:15<00:03,  1.84s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.80s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.82s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:17<00:01,  1.86s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.81s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:15<00:03,  1.84s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.87s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:40<00:00, 460.42s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:40<00:00, 460.42s/it]
+[32m2026-09-16 13:06:45.021[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.82s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:49<00:00, 469.07s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:49<00:00, 469.07s/it]
+[32m2026-09-16 13:06:45.516[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:  91%|█████████ | 10/11 [00:17<00:01,  1.85s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.86s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:49<00:00, 469.25s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:49<00:00, 469.25s/it]
+[32m2026-09-16 13:06:48.582[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.07it/s][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.30s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.49s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.60s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.68s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:10<00:06,  1.73s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:12<00:05,  1.75s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.77s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.78s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.79s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [08:32<00:00, 512.07s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [08:32<00:00, 512.07s/it]
+[32m2026-09-16 13:07:28.426[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+=== STARTING WEAK SCALING (6 members per GPU) ===
+--- Test on 1 GPU (Weak) ---
+[W916 13:07:37.037173184 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37043 (errno: 97 - Address family not supported by protocol).
+[W916 13:07:37.038466666 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37043 (errno: 97 - Address family not supported by protocol).
+[W916 13:07:37.039623862 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:37043 (errno: 97 - Address family not supported by protocol).
+[W916 13:07:37.135404736 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:46485 (errno: 97 - Address family not supported by protocol).
+[W916 13:07:50.230383741 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:46485 (errno: 97 - Address family not supported by protocol).
+[HENS WEAK SCALING] GPUs: 1 | Total: 6 | Per-GPU: 6
+[rank0]:[W916 13:08:17.498586867 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 13:08:18.725[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:08:18.726[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 13:10:07.194[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:10:07.224[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:   9%|▉         | 1/11 [00:00<00:01,  9.97it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:09,  1.11s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:11,  1.43s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:11,  1.58s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:10,  1.68s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.73s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.75s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:12<00:05,  1.77s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.79s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.80s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.80s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:41<00:00, 461.68s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:41<00:00, 461.68s/it]
+[32m2026-09-16 13:17:48.899[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+--- Test on 2 GPU (Weak) ---
+[W916 13:17:57.187060101 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44121 (errno: 97 - Address family not supported by protocol).
+[W916 13:17:57.188442542 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44121 (errno: 97 - Address family not supported by protocol).
+[W916 13:17:57.189621018 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:44121 (errno: 97 - Address family not supported by protocol).
+[W916 13:17:58.363089637 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:44421 (errno: 97 - Address family not supported by protocol).
+[W916 13:18:12.302771248 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:44421 (errno: 97 - Address family not supported by protocol).
+[W916 13:18:12.317227580 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:44421 (errno: 97 - Address family not supported by protocol).
+[HENS WEAK SCALING] GPUs: 2 | Total: 12 | Per-GPU: 6
+[rank0]:[W916 13:18:41.202036634 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 13:18:43.934[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:18:43.934[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:18:43.936[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:1[0m
+[32m2026-09-16 13:18:43.936[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 13:20:31.444[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:20:31.470[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 13:20:31.697[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:20:31.723[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:02<00:09,  1.00s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.35s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.53s/it][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:   9%|▉         | 1/11 [00:00<00:06,  1.48it/s][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.64s/it][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:02<00:13,  1.46s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.71s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:04<00:13,  1.67s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.76s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:06<00:12,  1.76s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.80s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:08<00:10,  1.80s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.81s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:10<00:09,  1.85s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.82s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:12<00:07,  1.86s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.83s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:37<00:00, 457.57s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:37<00:00, 457.57s/it]
+[32m2026-09-16 13:28:09.044[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:14<00:05,  1.88s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:16<00:03,  1.88s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:17<00:01,  1.89s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:19<00:00,  1.89s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:44<00:00, 464.50s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:44<00:00, 464.50s/it]
+[32m2026-09-16 13:28:16.221[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+--- Test on 4 GPU (Weak) ---
+[W916 13:28:25.827310397 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33569 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:25.828654758 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33569 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:25.829918992 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:33569 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:25.151328265 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13-interconnect-1.jupiter.internal]:44017 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:40.920917292 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [jpbo-023-13.jupiter.internal]:44017 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:40.027942028 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:44017 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:40.058774590 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:44017 (errno: 97 - Address family not supported by protocol).
+[W916 13:28:40.198736044 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [r23-nod7.jupiter.internal]:44017 (errno: 97 - Address family not supported by protocol).
+[HENS WEAK SCALING] GPUs: 4 | Total: 24 | Per-GPU: 6
+[rank0]:[W916 13:29:20.044247815 ProcessGroupNCCL.cpp:5310] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[32m2026-09-16 13:29:25.014[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:29:25.014[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:29:25.014[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:29:25.015[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:2[0m
+[32m2026-09-16 13:29:25.015[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:0[0m
+[32m2026-09-16 13:29:25.015[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:1[0m
+[32m2026-09-16 13:29:25.014[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m394[0m - [1mRunning ensemble inference![0m
+[32m2026-09-16 13:29:25.025[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m401[0m - [1mInference device: cuda:3[0m
+[32m2026-09-16 13:31:16.681[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:31:16.710[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 13:31:17.009[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:31:17.039[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 13:31:21.762[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:31:21.787[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A[32m2026-09-16 13:31:22.532[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m422[0m - [32m[1mFetched data from LocalGFSSource[0m
+[32m2026-09-16 13:31:22.558[0m | [1mINFO    [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m466[0m - [1mStarting 6 Member Ensemble Inference with             1 number of batches.[0m
+
+
+Total Ensemble Batches:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.04it/s][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.34s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.53s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.64s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.71s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.76s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.79s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.81s/it][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.82s/it][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.05it/s][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.83s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [07:40<00:00, 460.14s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [07:40<00:00, 460.14s/it]
+[32m2026-09-16 13:39:01.930[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.33s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.53s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.66s/it][A
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.75s/it][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.04it/s][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.79s/it][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.33s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.83s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.51s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:15<00:03,  1.86s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.61s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:17<00:01,  1.87s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.68s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.87s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [08:00<00:00, 480.72s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [08:00<00:00, 480.72s/it]
+[32m2026-09-16 13:39:17.432[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:06,  1.73s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:12<00:05,  1.75s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:14<00:03,  1.77s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:16<00:01,  1.78s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.79s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [08:08<00:00, 488.01s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [08:08<00:00, 488.01s/it]
+[32m2026-09-16 13:39:25.046[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+
+Running batch 0 inference:   0%|          | 0/11 [00:00<?, ?it/s][A
+Running batch 0 inference:  18%|█▊        | 2/11 [00:01<00:08,  1.03it/s][A
+Running batch 0 inference:  27%|██▋       | 3/11 [00:03<00:10,  1.35s/it][A
+Running batch 0 inference:  36%|███▋      | 4/11 [00:05<00:10,  1.55s/it][A
+Running batch 0 inference:  45%|████▌     | 5/11 [00:07<00:09,  1.66s/it][A
+Running batch 0 inference:  55%|█████▍    | 6/11 [00:09<00:08,  1.75s/it][A
+Running batch 0 inference:  64%|██████▎   | 7/11 [00:11<00:07,  1.79s/it][A
+Running batch 0 inference:  73%|███████▎  | 8/11 [00:13<00:05,  1.82s/it][A
+Running batch 0 inference:  82%|████████▏ | 9/11 [00:15<00:03,  1.84s/it][A
+Running batch 0 inference:  91%|█████████ | 10/11 [00:17<00:01,  1.85s/it][A
+Running batch 0 inference: 100%|██████████| 11/11 [00:18<00:00,  1.86s/it][A
+                                                                          [A
+
+Total Ensemble Batches: 100%|██████████| 1/1 [08:41<00:00, 521.83s/it][A[ATotal Ensemble Batches: 100%|██████████| 1/1 [08:41<00:00, 521.83s/it]
+[32m2026-09-16 13:40:04.385[0m | [32m[1mSUCCESS [0m | [36mearth2studio.run[0m:[36mensemble[0m:[36m536[0m - [32m[1m
+Inference complete[0m
+Benchmark run complete! Output CSVs generated.
